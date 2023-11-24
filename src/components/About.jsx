@@ -8,12 +8,26 @@ const About = () => {
         <img src={aboutSvg} className="w-full h-64" />
         <article>
           <SectionTitle text="Who am i" />
-          <p className="text-slate-600 mt-8 leading-loose">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
-            culpa maxime hic, illum laudantium iusto exercitationem commodi
-            doloribus, quasi magnam officia, nisi repellendus enim odit! Quo rem
-            minus placeat consequatur.
-          </p>
+          <div className="text-slate-600 mt-8 leading-loose">
+            <p>
+              Passionate Software Developer with a drive for learning all things
+              tech. My journey through computer science has been fueled by the
+              limitless possibilities of what can be achieved through software
+              e.g. this portfolio website.
+            </p>
+            <p>
+              I graduated from the University of Houston - Clear Lake in
+              December 2021 with a B.S. in computer science.
+            </p>
+            <p className="capitalize font-semibold my-2">What i love</p>
+            <p>
+              I thrive on the challenges presented with building websites,
+              mobile applications and developing video games. From fixing bugs,
+              to creating 2D sprites, I am constantly exploring what I can do
+              with software. I can think of no greater joy than seeing your
+              ideas come to life through your own hard work.
+            </p>
+          </div>
         </article>
       </div>
     </section>

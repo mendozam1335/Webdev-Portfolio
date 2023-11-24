@@ -1,8 +1,19 @@
-import { projects } from "../data";
+//import { projects } from "../data";
+import { useFetchProjects } from "../utils/fetchProjects";
 import ProjectsCard from "./ProjectsCard";
 import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
+  const { isLoading, projects } = useFetchProjects();
+
+  if (isLoading) {
+    return (
+      <section>
+        <h2>Loading...</h2>
+      </section>
+    );
+  }
+
   return (
     <section className="py-20 align-element" id="projects">
       <SectionTitle text="web creation" />
